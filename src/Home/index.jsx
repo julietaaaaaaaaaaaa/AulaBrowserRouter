@@ -1,9 +1,10 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import "..globals/css";
+import './globals.css';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { useState } from "react";
+import ListarProdutos from "../components/ListarProdutos";
 
 export default function Home(){
     const [listadeProdutosdoHome, setHome] = useState([
@@ -78,17 +79,9 @@ export default function Home(){
                 <div>
                     <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fbr.freepik.com%2Ffotos-premium%2Fum-bolo-rosa-com-glace-branco-e-glace-rosa_43287473.htm&psig=AOvVaw3rRPRcQPhKJMuII0JHKWBq&ust=1724272894427000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCJjytZ-3hIgDFQAAAAAdAAAAABAK" alt=""/>
                 </div>
-                </Carousel>
-    
-        {
-        listadeProdutosdoHome.map((bolo) =>
-                    <div key={bolo.id}>
-                        <p>{bolo.item}</p>
-                        <p>{bolo.preco}</p>
-                        <img src={bolo.imagem} />
-                    </div>
-                )
-            }
+        </Carousel>
+    <ListarProdutos produtos={listadeProdutosdoHome} />
+        
      </div>
 <Footer/>
 </>
