@@ -1,5 +1,3 @@
-export default function Produtos(){
-    return(
-        <p>Meus Produtos</p>
-    );
-}
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import "globals/css";
