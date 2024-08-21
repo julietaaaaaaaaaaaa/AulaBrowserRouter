@@ -7,7 +7,7 @@ export default function Home(){
         {
             id: 1,
             item: "bolo de morango",
-            imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlYePBpwDeuRD_mpzGEvRi_kZa0LfLHYukrg&s",
+            imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmMogKhxCoIvuqDXN6vkYoV02fTrJ5cCXZO4bfdol_GTH7cyfTZvK-xX5n6ACMd5KWqqg&usqp=CAU",
             preco: "R$68,00",
             peso:"2kg",
             formato:"redondo"
@@ -16,7 +16,7 @@ export default function Home(){
         {
             id: 2,
             item: "bolo de chocolate",
-            imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_S6hEdOhEOZC_vh5dU660IkR3msCqttEUOg&s",
+            imagem: "https://www.comidaereceitas.com.br/img/sizeswp/1200x675/2020/11/bolo_morango.jpg",
             preco: "R$72,00",
             peso:"2kg",
             formato:"redondo"
@@ -25,7 +25,7 @@ export default function Home(){
         {
             id: 3,
             item: "bolo 4 leite",
-            imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSYBr9IcXAaTyKPt7KHBzOc1-OcEsPqm-AEg&s",
+            imagem: "https://www.ecompletocdn.com.br/i/fp/1178/1521958_3_1692800584.jpg",
             preco: "R$120,00",
             peso:"2kg",
             formato:"redondo"
@@ -33,7 +33,7 @@ export default function Home(){
         {
             id: 4,
             item: "bolo de uva",
-            imagem: "",
+            imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJHHnygrr9wYRQAKjbxvKGBSjEiTmtbf27lg&s",
             preco: "R$180,00",
             peso:"2kg",
             formato:"redondo"
@@ -41,7 +41,7 @@ export default function Home(){
         {
         id: 5,
         item: "bolo ninho",
-        imagem: "",
+        imagem: "https://receitatodahora.com.br/wp-content/uploads/2018/09/creme-de-leite-ninho-1.jpg",
         preco: "R$100,00",
         peso:"3kg",
         formato:"redondo"
@@ -64,8 +64,7 @@ export default function Home(){
                 showThumbs={false}
                 dynamicHeight
              >
-            
-
+        
                 <div>
                     <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.sabornamesa.com.br%2Fbolos%2Fbolo-de-chocolate-decorado&psig=AOvVaw3nrYggpUuRmRfygfWc7PCd&ust=1724271349501000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCKCfir-xhIgDFQAAAAAdAAAAABAE" alt="" />
                     </div>
