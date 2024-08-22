@@ -5,13 +5,13 @@ export default function Header() {
         <> 
         <nav>
             <ul>
-               <Link to="/home">
+               <Link to="/">
                   <li> Home </li>
               </Link>
-              <Link to="/oferta">
+              <Link to="/ofertas">
                  <li> Ofertas </li>
               </Link>
-              <Link to="/home">
+              <Link to="/produtos">
                   <li> Produtos </li>
               </Link>
              </ul>

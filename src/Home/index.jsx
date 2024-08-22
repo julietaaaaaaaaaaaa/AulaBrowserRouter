@@ -1,6 +1,6 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import './globals.css';
+
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { useState } from "react";
@@ -57,7 +57,7 @@ export default function Home(){
     return(
     <>
         <Header/>
-        <div class="home">
+        <div className="home">
         <h1>Bolos da Julieta</h1>
 
         <Carousel
@@ -71,16 +71,16 @@ export default function Home(){
              >
         
                 <div>
-                    <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.sabornamesa.com.br%2Fbolos%2Fbolo-de-chocolate-decorado&psig=AOvVaw3nrYggpUuRmRfygfWc7PCd&ust=1724271349501000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCKCfir-xhIgDFQAAAAAdAAAAABAE" alt="" />
+                    <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.sabornamesa.com.br%2Fbolos%2Fbolo-de-chocolate-decorado&psig=AOvVaw3nrYggpUuRmRfygfWc7PCd&ust=1724271349501000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCKCfir-xhIgDFQAAAAAdAAAAABAE" alt="Slide 1" />
                 </div>
                 <div>
-                    <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.receitasnestle.com.br%2Freceitas%2Fbolo-pelado-naked-cake-com-morangos&psig=AOvVaw3PjB_7LZxkNVzkJDQuN42V&ust=1724271446117000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCIDp4-mxhIgDFQAAAAAdAAAAABAJ" alt=""/>
+                    <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.receitasnestle.com.br%2Freceitas%2Fbolo-pelado-naked-cake-com-morangos&psig=AOvVaw3PjB_7LZxkNVzkJDQuN42V&ust=1724271446117000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCIDp4-mxhIgDFQAAAAAdAAAAABAJ" alt="Slide 2"/>
                 </div>
                 <div>
-                    <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fbr.freepik.com%2Ffotos-premium%2Fum-bolo-rosa-com-glace-branco-e-glace-rosa_43287473.htm&psig=AOvVaw3rRPRcQPhKJMuII0JHKWBq&ust=1724272894427000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCJjytZ-3hIgDFQAAAAAdAAAAABAK" alt=""/>
+                    <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fbr.freepik.com%2Ffotos-premium%2Fum-bolo-rosa-com-glace-branco-e-glace-rosa_43287473.htm&psig=AOvVaw3rRPRcQPhKJMuII0JHKWBq&ust=1724272894427000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCJjytZ-3hIgDFQAAAAAdAAAAABAK" alt="Slide 3"/>
                 </div>
         </Carousel>
-    <ListarProdutos produtos={listadeProdutosdoHome} />
+    
         
      </div>
 <Footer/>

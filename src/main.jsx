@@ -10,8 +10,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <BrowserRouter>
     <Routes>
       <Route path="/" element={<Home/>}/>
-      <Route path="/Ofertas" element={<Oferta/>}/>
-      <Route path="/Produtos" element={<Produtos/>}/>
+      <Route path="/ofertas" element={<Oferta/>}/>
+      <Route path="/produtos" element={<Produtos/>}/>
     </Routes>
     </BrowserRouter>
   </React.StrictMode>,
