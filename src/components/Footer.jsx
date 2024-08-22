@@ -1,6 +1,9 @@
-export default function Footer(desenvolvedor) {
+export default function Footer() {
     return(
-        <h1>desenvolvedor</h1>
+        <footer>
+            
+        </footer>
+        
     )
        
     

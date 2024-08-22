@@ -1,7 +1,6 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { useState } from "react";
-import ListarProdutos from "../components/ListarProdutos";
 
 export default function Ofertas(){
     const [listadeProdutosOfertas, setOfertas] = useState([
@@ -89,6 +88,8 @@ export default function Ofertas(){
        
     
         </div>
+
+        <Footer/>
         </>
     );
 }

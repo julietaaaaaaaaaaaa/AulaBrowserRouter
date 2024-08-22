@@ -1,56 +1,61 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-
+import "../globals.css"
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { useState } from "react";
-import ListarProdutos from "../components/ListarProdutos";
+
 
 export default function Home(){
     const [listadeProdutosdoHome, setHome] = useState([
         {
             id: 1,
-            item: "bolo de morango",
-            imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmMogKhxCoIvuqDXN6vkYoV02fTrJ5cCXZO4bfdol_GTH7cyfTZvK-xX5n6ACMd5KWqqg&usqp=CAU",
-            preco: "R$68,00",
-            peso:"2kg",
-            formato:"redondo"
-        },
+            item: "Tênis Authentic",
+            imagem: "https://secure-static.vans.com.br/medias/sys_master/vans/vans/h77/ha9/h00/h00/12094949294110/1002000450004U-02-BASEIMAGE-Lores.jpg",
+            preco: "R$299,99",
+            cor:"azul",
+            tamanho:["35","36","37","38"]},
 
         {
             id: 2,
-            item: "bolo de chocolate",
-            imagem: "https://www.comidaereceitas.com.br/img/sizeswp/1200x675/2020/11/bolo_morango.jpg",
-            preco: "R$72,00",
-            peso:"2kg",
-            formato:"redondo"
-        },
+            item: "Tênis Authentic Pesto",
+            imagem: "https://secure-static.vans.com.br/medias/sys_master/vans/vans/h91/hc5/h00/h00/12093993320478/1002000370193U-02-BASEIMAGE-Lores.jpg",
+            preco: "R$299,99",
+            cor:"verde",
+            tamanho:["35","36","37","38"]},
+
+    
 
         {
             id: 3,
-            item: "bolo 4 leite",
-            imagem: "https://www.ecompletocdn.com.br/i/fp/1178/1521958_3_1692800584.jpg",
-            preco: "R$120,00",
-            peso:"2kg",
-            formato:"redondo"
-        },
+            item: "Tênis Authentic Plataforma ",
+            imagem: "https://secure-static.vans.com.br/medias/sys_master/vans/vans/h78/hcd/h00/h00/11696977379358/1002000520013U-02-BASEIMAGE-Lores.jpg",
+            preco: "R$399,99",
+            cor:"xadrez",
+            tamanho:["35","36","37","38"]},
+
+    
         {
             id: 4,
-            item: "bolo de uva",
-            imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJHHnygrr9wYRQAKjbxvKGBSjEiTmtbf27lg&s",
-            preco: "R$180,00",
-            peso:"2kg",
-            formato:"redondo"
-        },
+            item: "Tênis Authentic",
+            imagem: "https://secure-static.vans.com.br/medias/sys_master/vans/vans/h49/h3e/h00/h00/12080931864606/1002000450003U-02-BASEIMAGE-Lores.jpg",
+            preco: "R$ 299,99",
+            cor:"Preto",
+            tamanho:["35","36","37","38"]},
         {
         id: 5,
-        item: "bolo ninho",
-        imagem: "https://receitatodahora.com.br/wp-content/uploads/2018/09/creme-de-leite-ninho-1.jpg",
-        preco: "R$100,00",
-        peso:"3kg",
-        formato:"redondo"
-        }
-
+        item: "Tênis Authentic White",
+        imagem: "https://secure-static.vans.com.br/medias/sys_master/vans/vans/he1/had/h00/h00/12093968285726/1002000450141U-02-BASEIMAGE-Lores.jpg",
+        preco: "R$ 299,99",
+        cor:"Creme",
+        tamanho:["35","36","37","38"]},
+{
+    id:6,
+    item:"Tênis Authentic Foxglove",
+    imagem:"https://secure-static.vans.com.br/medias/sys_master/vans/vans/h87/hc9/h00/h00/12094001020958/1002000370191U-02-BASEIMAGE-Lores.jpg",
+    preco:"R$ 299,99",
+    cor:"rosa",
+    tamanho:["35","36","37","38"]}
         
     ]);
 
@@ -58,7 +63,7 @@ export default function Home(){
     <>
         <Header/>
         <div className="home">
-        <h1>Bolos da Julieta</h1>
+        
 
         <Carousel
                 infiniteLoop
@@ -71,18 +76,29 @@ export default function Home(){
              >
         
                 <div>
-                    <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.sabornamesa.com.br%2Fbolos%2Fbolo-de-chocolate-decorado&psig=AOvVaw3nrYggpUuRmRfygfWc7PCd&ust=1724271349501000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCKCfir-xhIgDFQAAAAAdAAAAABAE" alt="Slide 1" />
+                    <img src="https://secure-static.vans.com.br/medias/sys_master/vans/vans/hce/h60/h00/h00/12082617843742/AlwaysPushing-LPhero-02.jpg" alt="Slide 1" />
                 </div>
                 <div>
-                    <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.receitasnestle.com.br%2Freceitas%2Fbolo-pelado-naked-cake-com-morangos&psig=AOvVaw3PjB_7LZxkNVzkJDQuN42V&ust=1724271446117000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCIDp4-mxhIgDFQAAAAAdAAAAABAJ" alt="Slide 2"/>
+                    <img src="https://secure-static.vans.com.br/medias/sys_master/vans/vans/h52/h35/h00/h00/12131097346078/Upland-hero-01.jpg" alt="Slide 2"/>
                 </div>
-                <div>
-                    <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fbr.freepik.com%2Ffotos-premium%2Fum-bolo-rosa-com-glace-branco-e-glace-rosa_43287473.htm&psig=AOvVaw3rRPRcQPhKJMuII0JHKWBq&ust=1724272894427000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCJjytZ-3hIgDFQAAAAAdAAAAABAK" alt="Slide 3"/>
-                </div>
+                
         </Carousel>
-    
-        
+        {
+                listadeProdutosdoHome.map((objeto) =>
+                    <div  key={objeto.id}>
+                        <img src={objeto.imagem} />
+                        <p>{objeto.item}</p>
+                        <p>{objeto.preco}</p>
+                        <p>{objeto.cor}</p>
+                        <p>{objeto.tamanho}</p>
+                        <button className="botaoComprar" onClick={() => adicionarOBJETOPedido(objeto)}> Comprar </button>
+                        
+                        </div>
+                )
+            }
+            
      </div>
+
 <Footer/>
 </>
     );
