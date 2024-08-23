@@ -3,18 +3,21 @@ import { Link } from "react-router-dom";
 export default function Header() {
     return(
         <> 
-        <nav>
-            <ul className="nav-menu">
+        <nav
+         className="menu">
+            <div >
+            <ul class="headerr">
                <Link to="/">
-                  <li > Home </li>
+                  <li className="HeaderHome" > Home </li>
               </Link>
               <Link to="/ofertas">
-                 <li> Ofertas </li>
+                 <li className="HeaderOfertas"> Ofertas </li>
               </Link>
               <Link to="/produtos">
-                  <li> Produtos </li>
+                  <li className="HeaderProdutos"> Produtos </li>
               </Link>
              </ul>
+             </div>
          </nav>
         </>
     )

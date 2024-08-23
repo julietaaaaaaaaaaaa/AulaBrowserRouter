@@ -5,7 +5,6 @@ import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { useState } from "react";
 
-
 export default function Home(){
     const [listadeProdutosdoHome, setHome] = useState([
         {
@@ -92,13 +91,10 @@ export default function Home(){
                         <p>{objeto.cor}</p>
                         <p>{objeto.tamanho}</p>
                         <button className="botaoComprar" onClick={() => adicionarOBJETOPedido(objeto)}> Comprar </button>
-                        
                         </div>
                 )
             }
-            
      </div>
-
 <Footer/>
 </>
     );
