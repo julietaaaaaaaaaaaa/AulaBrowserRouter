@@ -1,6 +1,7 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { useState } from "react";
+import ListarProdutos from "../components/ListarProdutos";
 
 export default function Ofertas(){
     const [listadeProdutosOfertas, setOfertas] = useState([
@@ -83,23 +84,16 @@ export default function Ofertas(){
 
     return(
         <>
+        <Header/>
         <div className="ofertas">
         <h1>IMPERDIVELLLL!!!!</h1>
         </div>
-        {
-                listadeProdutosdoHome.map((objeto) =>
-                    <div  key={objeto.id}>
-                        <img src={objeto.imagem} />
-                        <p>{objeto.item}</p>
-                        <p>{objeto.preco}</p>
-                        <p>{objeto.cor}</p>
-                        <p>{objeto.tamanho}</p>
-                        <button className="botaoComprar" onClick={() => adicionarOBJETOPedido(objeto)}> Comprar </button>
-                        </div>
-                )
-            }
+        <ListarProdutos produtos={listadeProdutosOfertas}/>
+
+        <Footer/>
 
         </>
+
     );
 }
 

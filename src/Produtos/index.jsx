@@ -114,22 +114,16 @@ tamanho:["35","36","37","38"]},
                     tamanho:["35","36","37","38"]}
 ]);
 return(
+    <>
     <div>
     <Header/>
-    {
-                listadePRODUTOS.map((objeto) =>
-                    <div key={objeto.id}>
-                        <img src={objeto.imagem} />
-                        <p>{objeto.item}</p>
-                        <p>{objeto.preco}</p>
-                        <p>{objeto.cor}</p>
-                        <p>{objeto.tamanho}</p>
-                        <button className="botaoComprar" onClick={() => adicionarOBJETOPedido(objeto)}> Comprar </button>
-                        </div>
-                )
-            }
-       <Footer/>
+
+
+    <ListarProdutos produtos={listadePRODUTOS}/>
+
+     <Footer/>
     </div>
+    </>
     
 );
 }

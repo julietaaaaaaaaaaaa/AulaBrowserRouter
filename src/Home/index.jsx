@@ -4,6 +4,7 @@ import "../globals.css"
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { useState } from "react";
+import ListarProdutos from "../components/ListarProdutos";
 
 export default function Home(){
     const [listadeProdutosdoHome, setHome] = useState([
@@ -13,7 +14,7 @@ export default function Home(){
             imagem: "https://secure-static.vans.com.br/medias/sys_master/vans/vans/h77/ha9/h00/h00/12094949294110/1002000450004U-02-BASEIMAGE-Lores.jpg",
             preco: "R$299,99",
             cor:"azul",
-            tamanho:["35","36","37","38"]},
+            tamanho:["Números: 35,36,37,38"]},
 
         {
             id: 2,
@@ -21,7 +22,7 @@ export default function Home(){
             imagem: "https://secure-static.vans.com.br/medias/sys_master/vans/vans/h91/hc5/h00/h00/12093993320478/1002000370193U-02-BASEIMAGE-Lores.jpg",
             preco: "R$299,99",
             cor:"verde",
-            tamanho:["35","36","37","38"]},
+            tamanho:["Números: 35,36,37,38"]},
 
     
 
@@ -31,7 +32,7 @@ export default function Home(){
             imagem: "https://secure-static.vans.com.br/medias/sys_master/vans/vans/h78/hcd/h00/h00/11696977379358/1002000520013U-02-BASEIMAGE-Lores.jpg",
             preco: "R$399,99",
             cor:"xadrez",
-            tamanho:["35","36","37","38"]},
+            tamanho:["Números: 35,36,37,38"]},
 
     
         {
@@ -40,30 +41,27 @@ export default function Home(){
             imagem: "https://secure-static.vans.com.br/medias/sys_master/vans/vans/h49/h3e/h00/h00/12080931864606/1002000450003U-02-BASEIMAGE-Lores.jpg",
             preco: "R$ 299,99",
             cor:"Preto",
-            tamanho:["35","36","37","38"]},
+            tamanho:["Números: 35,36,37,38"]},
         {
         id: 5,
         item: "Tênis Authentic White",
         imagem: "https://secure-static.vans.com.br/medias/sys_master/vans/vans/he1/had/h00/h00/12093968285726/1002000450141U-02-BASEIMAGE-Lores.jpg",
         preco: "R$ 299,99",
         cor:"Creme",
-        tamanho:["35","36","37","38"]},
-{
-    id:6,
-    item:"Tênis Authentic Foxglove",
-    imagem:"https://secure-static.vans.com.br/medias/sys_master/vans/vans/h87/hc9/h00/h00/12094001020958/1002000370191U-02-BASEIMAGE-Lores.jpg",
-    preco:"R$ 299,99",
-    cor:"rosa",
-    tamanho:["35","36","37","38"]}
-        
+        tamanho:["Números: 35,36,37,38"]},
+        {
+            id:6,
+            item:"Tênis Authentic Foxglove",
+            imagem:"https://secure-static.vans.com.br/medias/sys_master/vans/vans/h87/hc9/h00/h00/12094001020958/1002000370191U-02-BASEIMAGE-Lores.jpg",
+            preco:"R$ 299,99",
+            cor:"rosa",
+            tamanho:["35","36","37","38"]},
     ]);
-
     return(
     <>
         <Header/>
         <div className="home">
         
-
         <Carousel
                 infiniteLoop
                 useKeyboardArrows
@@ -82,24 +80,9 @@ export default function Home(){
                 </div>
                 
         </Carousel>
-        <div className="objetos">
-        {
-
-                listadeProdutosdoHome.map((objeto) =>
-                    <div className="card"  key={objeto.id}>
-                        <img className="img-card" src={objeto.imagem} />
-                        <p className="paragrafoitem">{objeto.item}</p>
-                        <p className="paragrafoitem">{objeto.preco}</p>
-                        <p className="paragrafoitem">{objeto.cor}</p>
-                        <p className="paragrafoitem">{objeto.tamanho}</p>
-                        <button className="botaoComprar" onClick={() => adicionarOBJETOPedido(objeto)}> Comprar </button>
-                        </div>
-    
-                )
-            }
-     </div>
-     </div>
-<Footer/>
+        </div>
+        <ListarProdutos produtos={listadeProdutosdoHome}/>
+        <Footer/>
 </>
     );
 }
