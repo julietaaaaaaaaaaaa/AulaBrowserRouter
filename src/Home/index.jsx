@@ -82,18 +82,22 @@ export default function Home(){
                 </div>
                 
         </Carousel>
+        <div className="objetos">
         {
+
                 listadeProdutosdoHome.map((objeto) =>
-                    <div  key={objeto.id}>
-                        <img src={objeto.imagem} />
-                        <p>{objeto.item}</p>
-                        <p>{objeto.preco}</p>
-                        <p>{objeto.cor}</p>
-                        <p>{objeto.tamanho}</p>
+                    <div className="card"  key={objeto.id}>
+                        <img className="img-card" src={objeto.imagem} />
+                        <p className="paragrafoitem">{objeto.item}</p>
+                        <p className="paragrafoitem">{objeto.preco}</p>
+                        <p className="paragrafoitem">{objeto.cor}</p>
+                        <p className="paragrafoitem">{objeto.tamanho}</p>
                         <button className="botaoComprar" onClick={() => adicionarOBJETOPedido(objeto)}> Comprar </button>
                         </div>
+    
                 )
             }
+     </div>
      </div>
 <Footer/>
 </>

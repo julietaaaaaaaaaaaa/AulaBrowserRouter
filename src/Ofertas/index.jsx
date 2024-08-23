@@ -86,6 +86,19 @@ export default function Ofertas(){
         <div className="ofertas">
         <h1>IMPERDIVELLLL!!!!</h1>
         </div>
+        {
+                listadeProdutosdoHome.map((objeto) =>
+                    <div  key={objeto.id}>
+                        <img src={objeto.imagem} />
+                        <p>{objeto.item}</p>
+                        <p>{objeto.preco}</p>
+                        <p>{objeto.cor}</p>
+                        <p>{objeto.tamanho}</p>
+                        <button className="botaoComprar" onClick={() => adicionarOBJETOPedido(objeto)}> Comprar </button>
+                        </div>
+                )
+            }
+
         </>
     );
 }
