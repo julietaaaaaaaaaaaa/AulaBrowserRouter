@@ -109,25 +109,42 @@ footer{
     display: flex;
     padding-top: 10px;
 }
+
+
+
 @media screen and (max-width: 1200px){
+    .imgcarrousel{
+        height: 180px;
+        width: 2000;
+
+    }
     .menu{
+        height:180px;
+        width: 2000px;
 
 
     }
     .objetos{
-    
+    display:flex;
 
     }
     .lifooter{
-
-
+        height:200px;
+        width: 1200px;   
     }
 
     
 }
 @media screen and (max-width: 900px){
+    .imgcarrousel{
+       
+
+    }
+    
     .menu{
 
+       
+      
 
     }
     .objetos{
@@ -135,14 +152,14 @@ footer{
 
     }
     .lifooter{
-
+        
 
     }
 
 }
 @media screen and (max-width: 600px){
     .menu{
-
+       
 
     }
    .objetos{

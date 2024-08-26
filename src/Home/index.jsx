@@ -78,10 +78,10 @@ export default function Home(){
              >
         
                 <div>
-                    <img src="https://secure-static.vans.com.br/medias/sys_master/vans/vans/hce/h60/h00/h00/12082617843742/AlwaysPushing-LPhero-02.jpg" alt="Slide 1" />
+                    <img className="imgcarousel"src="https://secure-static.vans.com.br/medias/sys_master/vans/vans/hce/h60/h00/h00/12082617843742/AlwaysPushing-LPhero-02.jpg" alt="Slide 1" />
                 </div>
                 <div>
-                    <img src="https://secure-static.vans.com.br/medias/sys_master/vans/vans/h52/h35/h00/h00/12131097346078/Upland-hero-01.jpg" alt="Slide 2"/>
+                    <img className="imgcarousel"src="https://secure-static.vans.com.br/medias/sys_master/vans/vans/h52/h35/h00/h00/12131097346078/Upland-hero-01.jpg" alt="Slide 2"/>
                 </div>
                 
         </Carousel>
