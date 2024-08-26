@@ -5,7 +5,7 @@ export default function Header() {
         <> 
         <nav>
             <div className="menu">
-            <ul >
+            <ul className="headerHeader">
                <Link className="homelink" to="/">
                   <li className="HeaderHome" > Home </li>
               </Link>
