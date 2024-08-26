@@ -5,7 +5,6 @@ export default function ListarProdutos({produtos}) {
         <div>
            <div className="objetos">
         {
-
                 produtos.map((objeto) =>
                     <div className="card"  key={objeto.id}>
                         <img className="img-card" src={objeto.imagem} />
@@ -15,14 +14,10 @@ export default function ListarProdutos({produtos}) {
                         <p className="paragrafoitem">{objeto.tamanho}</p>
                         <button className="botaoComprar" onClick={() => adicionarOBJETOPedido(objeto)}> Comprar </button>
                         </div>
-    
                 )
             }
      </div>
      </div>
-
-
-
 
     )
      

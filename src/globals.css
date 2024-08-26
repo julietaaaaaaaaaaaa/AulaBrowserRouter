@@ -7,57 +7,61 @@ footer{
     }
 
 .botaoComprar{
-        background-color: rgb(220, 206, 234);
-        border-radius: 8px;
-        margin-left: 20px;
-        border-color:rgb(185, 88, 185); ;
+        background-color: rgb(220, 159, 179);
+        margin-left: 10px;
+        margin-bottom: 10%;
+        cursor: pointer;
+        box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+        border-radius: 5px;
+        font-family: 'Lato';
+        height: 8%;
+        width: 22%;
+    
     }
 .menu{
     display: flex;
   align-items: center;
   background-color: black;
+ 
 }
 
 .HeaderHome{
     display: flex;
     justify-content: space-between;
-    color:rgb(195, 139, 195);
+    color:rgb(128, 72, 128);
    padding-top: 15px;
     font-family: 'Courier New', Courier, monospace;
+
    
     }
     .HeaderOfertas{
         display: flex;
         justify-content: space-between;
-        color:rgb(195, 139, 195);
+        color:rgb(128, 72, 128);
         padding-top: 15px;
         font-family: 'Courier New', Courier, monospace;
+      
    
     }
  .HeaderProdutos{
             display: flex;
             justify-content: space-between;
-            color:rgb(195, 139, 195);
+            color:rgb(128, 72, 128);
             padding-top: 15px;
             font-family: 'Courier New', Courier, monospace;
-        
-   
+
 }
-.headerr{
-    display: flex;
-    padding-top: 5px;
     
-}
 .objetos{
     display: grid; 
     grid-template-columns: repeat(3, 1fr);      
     gap: 10px;
-    padding: 10px;                  /*espaco entre cards*/  /* diplay de colunasss*/
+    padding: 10px;                  /*espaco entre cards*/  /* display de colunasss*/
 }
 .card{
     border-radius: 10px;
     margin-left: 100px;
-    background-color: rgb(191, 171, 212);
+    background-color: rgb(235, 209, 235);
     width: 300px;
 }
         
@@ -66,10 +70,88 @@ footer{
     width:190px ;
     margin-left: 50px;
     padding-top: 10px;
+    border-radius: 10px;
+  
     
 }
 
 .paragrafoitem{
     margin-left: 20px;
     color:rgb(128, 72, 128);
+}
+.lifooter{
+    color:rgb(128, 72, 128);
+    padding-top: 25px;
+    margin-left: 25px;
+    padding-top: 12px;
+  cursor: pointer;
+  list-style-type: none;
+}
+.imgfooter{
+    height: 80px;
+    width: 100px;
+    margin-left: 1700px;
+    margin-top: -80px;
+}
+.homelink{
+    text-decoration: none;
+    display: flex;
+    padding-top: 10px;
+
+}
+.ofertaslink{
+    text-decoration: none;
+    display: flex;
+    padding-top: 10px;
+}
+.produtoslink{
+    text-decoration: none;
+    display: flex;
+    padding-top: 10px;
+}
+@media screen and (max-width: 1200px){
+    .menu{
+
+
+    }
+    .objetos{
+    
+
+    }
+    .lifooter{
+
+
+    }
+
+    
+}
+@media screen and (max-width: 900px){
+    .menu{
+
+
+    }
+    .objetos{
+    
+
+    }
+    .lifooter{
+
+
+    }
+
+}
+@media screen and (max-width: 600px){
+    .menu{
+
+
+    }
+   .objetos{
+    
+
+    }
+    .lifooter{
+ 
+
+    }
+    
 }

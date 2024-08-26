@@ -14,7 +14,8 @@ export default function Home(){
             imagem: "https://secure-static.vans.com.br/medias/sys_master/vans/vans/h77/ha9/h00/h00/12094949294110/1002000450004U-02-BASEIMAGE-Lores.jpg",
             preco: "R$299,99",
             cor:"azul",
-            tamanho:["Números: 35,36,37,38"]},
+            tamanho:["Tamanhos: 35, 36, 37, 38"]},
+    
 
         {
             id: 2,
@@ -22,7 +23,8 @@ export default function Home(){
             imagem: "https://secure-static.vans.com.br/medias/sys_master/vans/vans/h91/hc5/h00/h00/12093993320478/1002000370193U-02-BASEIMAGE-Lores.jpg",
             preco: "R$299,99",
             cor:"verde",
-            tamanho:["Números: 35,36,37,38"]},
+            tamanho:["Tamanhos: 35, 36, 37, 38"]},
+    
 
     
 
@@ -32,8 +34,8 @@ export default function Home(){
             imagem: "https://secure-static.vans.com.br/medias/sys_master/vans/vans/h78/hcd/h00/h00/11696977379358/1002000520013U-02-BASEIMAGE-Lores.jpg",
             preco: "R$399,99",
             cor:"xadrez",
-            tamanho:["Números: 35,36,37,38"]},
-
+            tamanho:["Tamanhos: 35, 36, 37, 38"]},
+    
     
         {
             id: 4,
@@ -41,21 +43,24 @@ export default function Home(){
             imagem: "https://secure-static.vans.com.br/medias/sys_master/vans/vans/h49/h3e/h00/h00/12080931864606/1002000450003U-02-BASEIMAGE-Lores.jpg",
             preco: "R$ 299,99",
             cor:"Preto",
-            tamanho:["Números: 35,36,37,38"]},
+            tamanho:["Tamanhos: 35, 36, 37, 38"]},
+    
         {
         id: 5,
         item: "Tênis Authentic White",
         imagem: "https://secure-static.vans.com.br/medias/sys_master/vans/vans/he1/had/h00/h00/12093968285726/1002000450141U-02-BASEIMAGE-Lores.jpg",
         preco: "R$ 299,99",
         cor:"Creme",
-        tamanho:["Números: 35,36,37,38"]},
-        {
-            id:6,
-            item:"Tênis Authentic Foxglove",
-            imagem:"https://secure-static.vans.com.br/medias/sys_master/vans/vans/h87/hc9/h00/h00/12094001020958/1002000370191U-02-BASEIMAGE-Lores.jpg",
-            preco:"R$ 299,99",
-            cor:"rosa",
-            tamanho:["35","36","37","38"]},
+        tamanho:["Tamanhos: 35, 36, 37, 38"]},
+    
+{
+    id:6,
+    item:"Tênis Authentic Foxglove",
+    imagem:"https://secure-static.vans.com.br/medias/sys_master/vans/vans/h87/hc9/h00/h00/12094001020958/1002000370191U-02-BASEIMAGE-Lores.jpg",
+    preco:"R$ 299,99",
+    cor:"rosa",
+    tamanho:["Tamanhos: 35, 36, 37, 38"]},
+    
     ]);
     return(
     <>
