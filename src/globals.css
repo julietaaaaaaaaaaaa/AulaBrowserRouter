@@ -4,10 +4,9 @@ body{
 }
 footer{
     background:black;
-    width: 3000px;
-    height: 500px;
-    bottom: 0;
-    left: 0;
+    width: 1910px;
+    height: 350px;
+    
     }
 
 .botaoComprar{
@@ -96,7 +95,7 @@ footer{
   list-style: none;
   color:rgb(239, 226, 149);
   margin-left: 250px;
-  margin-top: -150px;
+  margin-top: -207px;
 }
 
 .lifooter3{
@@ -106,7 +105,7 @@ margin-left: 400px;
 margin-top: -105px;
 }
 .footer-abaixamento{
-    margin-top: 200px;
+    margin-top:80px ;
 }
 .headerHeader{
     display: flex;
@@ -116,7 +115,7 @@ margin-top: -105px;
     height: 80px;
     width: 100px;
     margin-left: 1700px;
-    margin-top: -80px;
+    margin-top: 0px;
 }
 
 .homelink{
@@ -141,64 +140,69 @@ margin-top: -105px;
 }
 
 
-
+/*computador*/
 @media screen and (max-width: 1200px){
-    .imgcarrousel{
+    .home{
         height: 180px;
-        width: 2000;
+        width: 2000px;
 
+    }
+    .objetos{
+        margin-top:570px ;
     }
     .menu{
         height:180px;
         width: 2000px;
-
-
     }
-    .objetos{
-    display:flex;
+    .footer{
+        width: 2000px;
+        height: 1000px;
+         }
 
-    }
-    .lifooter{
-        height:200px;
-        width: 1200px;   
-    }
-
+    /*tablets*/
     
 }
 @media screen and (max-width: 900px){
-    .imgcarrousel{
-       
-
+    .home{
+        width: 2000px;
     }
     
-    .menu{
-
-       
-      
-
-    }
     .objetos{
-    
-
+            display: grid; 
+            grid-template-columns: repeat(3, 1fr); 
+            margin-left: 500px;                    
     }
-    .lifooter{
-        
-
+    .card{
+        margin: 0px;
     }
+    .footer{
+   width: 2000px;
+   height: 1000px;
+    }
+
+
+
+
+    /*celular*/
 
 }
 @media screen and (max-width: 600px){
+    .home{
+     width: 830px;
+    }
     .menu{
-       
-
+        width: 830px;
     }
    .objetos{
-    
-
+    display: grid; 
+    grid-template-columns: repeat(1, 1fr); 
+    margin-left:260px ;
     }
-    .lifooter{
- 
-
+    .footer{
+        width: 830px;
     }
-    
+
+    .imgfooter{
+        margin-left:600px;
+    }
 }

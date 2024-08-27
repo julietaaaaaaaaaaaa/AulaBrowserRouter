@@ -11,7 +11,7 @@ export default function Ofertas(){
             imagem: "https://secure-static.vans.com.br/medias/sys_master/vans/vans/h77/ha9/h00/h00/12094949294110/1002000450004U-02-BASEIMAGE-Lores.jpg",
             preco: "De R$299,99 por R$199,99 ",
             cor:"azul",
-            tamanho:["Tamanhos: 35, 36, 37 ,38"]},
+            tamanho:["Tamanhos: 35, 36, 37, 38"]},
     
 
         {
